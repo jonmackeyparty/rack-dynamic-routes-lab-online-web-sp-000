@@ -6,5 +6,6 @@ class Item
     @name = name
     @price = price
     @@items<<self
+    
   end
 end
