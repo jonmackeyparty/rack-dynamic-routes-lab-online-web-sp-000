@@ -5,7 +5,7 @@ class Application
     req = Rack::Request.new(env)
  
     if req.path=="/items/"
-      item = 
+      item = req.path.split("/item/").last
       resp.write "#{item.price}"
     else
       resp.write "Item not found"
